@@ -1,0 +1,10 @@
+insert into organizations (id, name, type, international) values (1, 'Flipopia', 'private', 'Vietnam');
+insert into organizations (id, name, type, international) values (2, 'Browsebug', 'national', 'Czech Republic');
+insert into organizations (id, name, type, international) values (3, 'Shuffledrive', 'national', 'Russia');
+insert into organizations (id, name, type, international) values (4, 'Tavu', 'private', 'United States');
+insert into organizations (id, name, type, international) values (5, 'Yamia', 'national', 'Ukraine');
+insert into organizations (id, name, type, international) values (6, 'Skipstorm', 'private', 'South Africa');
+insert into organizations (id, name, type, international) values (7, 'Skinte', 'national', 'China');
+insert into organizations (id, name, type, international) values (8, 'Rhybox', 'private', 'China');
+insert into organizations (id, name, type, international) values (9, 'Divavu', 'national', 'Sweden');
+insert into organizations (id, name, type, international) values (10, 'Flipbug', 'national', 'Poland');

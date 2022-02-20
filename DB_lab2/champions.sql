@@ -1,0 +1,10 @@
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Skies, '2019-03', 43, 6, 12);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Chess, '2020-02', 22, 8, 3);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Basketball, '2018-11', 49, 6, 18);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Football, '2020-09', 24, 3, 8);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Tenis, '2020-08', 28, 4, 18);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Accuracy, '2018-05', 3, 6, 18);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Skateboarding, '2018-07', 26, 5, 11);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Swimming, '2018-04', 22, 4, 10);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Athletics, '2019-01', 12, 3, 19);
+insert into champions (name, year, sponsors_id, organizators_id, teams) values (Acrobatics, '2018-05', 33, 8, 20);
