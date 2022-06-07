@@ -1,0 +1,8 @@
+1. завантажте angular-13-crud-front та node-express-mongodb-back
+
+2. npm install в обох папках, виконуйте її з консолі node.js 
+
+3. node serves.js для node-express-mongodb-back 
+та ng serve --port 8081 для angular-13-crud-front
+
+4. відкрити localhost:8081
