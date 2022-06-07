@@ -1,0 +1,64 @@
+<div *ngIf="viewMode; else editable">
+    <div *ngIf="currentChamp.id">
+        <h4>Champ</h4>
+        <div>
+            <label><strong>Name:</strong></label> {{ currentChamp.full_name }}
+        </div>
+        <div>
+            <label><strong>age:</strong></label> {{ currentChamp.age }}
+        </div>
+        <div>
+            <label><strong>gender:</strong></label> {{ currentChamp.gender }}
+        </div>
+        <div>
+            <label><strong>team:</strong></label> {{ currentChamp.team }}
+        </div>
+
+        <a class="badge badge-warning" routerLink="/champs/{{ currentChamp.id }}">
+      Edit
+    </a>
+    </div>
+
+    <div *ngIf="!currentChamp">
+        <br />
+        <p>Please click on a Champ...</p>
+    </div>
+</div>
+
+<ng-template #editable>
+    <div *ngIf="currentChamp.id" class="edit-form">
+        <h4>Champ</h4>
+        <form>
+            <div class="form-group">
+                <label for="full_name">full_name</label>
+                <input type="text" class="form-control" id="full_name" [(ngModel)]="currentChamp.full_name" name="full_name" />
+            </div>
+            <div class="form-group">
+                <label for="age">age</label>
+                <input type="text" class="form-control" id="age" [(ngModel)]="currentChamp.age" name="age" />
+            </div>
+            <div class="form-group">
+                <label for="description">gender</label>
+                <input type="text" class="form-control" id="gender" [(ngModel)]="currentChamp.gender" name="gender" />
+            </div>
+            <div class="form-group">
+                <label for="description">Team</label>
+                <input type="text" class="form-control" id="team" [(ngModel)]="currentChamp.team" name="team" />
+            </div>
+        </form>
+
+        <button class="badge badge-danger mr-2" (click)="deleteChamp()">
+      Delete
+    </button>
+
+        <button type="submit" class="badge badge-success mb-2" (click)="updateChamp()">
+      Update
+    </button>
+        <p>{{ message }}</p>
+    </div>
+
+    <div *ngIf="!currentChamp.id">
+        <br />
+        <p>Cannot access this Champ...</p>
+    </div>
+</ng-template>

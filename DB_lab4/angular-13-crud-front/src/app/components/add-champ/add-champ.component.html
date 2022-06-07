@@ -1,0 +1,27 @@
+<div>
+    <div class="submit-form">
+        <div *ngIf="!submitted">
+            <div class="form-group">
+                <label for="title">full_name</label>
+                <input type="text" class="form-control" id="full_name" required [(ngModel)]="champ.full_name" name="full_name" />
+
+
+                <div class="form-group">
+                    <label for="age">age</label>
+                    <input class="form-control" id="age" required [(ngModel)]="champ.age" name="age" />
+                </div>
+                <div class="form-group">
+                    <label for="gender">gender</label>
+                    <input class="form-control" id="gender" required [(ngModel)]="champ.gender" name="gender" />
+                </div>
+                <div class="form-group">
+                    <label for="description">team</label>
+                    <input class="form-control" id="team" required [(ngModel)]="champ.team" name="team" />
+                </div>
+                <button (click)="saveChamp()" class="btn btn-success">Submit</button>
+
+
+                <div *ngIf="submitted">
+                    <h4>Champ was submitted successfully!</h4>
+                    <button class="btn btn-success" (click)="newChamp()">Add</button>
+                </div>
