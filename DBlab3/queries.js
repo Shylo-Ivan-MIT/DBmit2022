@@ -33,7 +33,7 @@ const createChamp = (request, response) => {
         if (error) {
             throw error
         }
-        response.status(201).send(`Champ added with ID: ${result.insertId}`)
+        response.status(201).send(`Champ added with ID: ${results.insertId}`)
     })
 }
 
